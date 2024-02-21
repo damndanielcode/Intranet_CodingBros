@@ -1,0 +1,37 @@
+﻿<Window x:Class="Intranet_CodingBros.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Intranet_CodingBros"
+        mc:Ignorable="d"
+        Title="MainWindow" SizeToContent="WidthAndHeight" MinWidth="800" MinHeight="450"   >
+
+    <Grid Background="White">
+       
+        <Label x:Name="lbl_intranet" FontWeight="Medium" Margin="30,10,30,350" Content="CODING BROS." HorizontalContentAlignment="Center" VerticalContentAlignment="Top" FontSize="50"  Foreground="#FF012071" FontFamily="Cascadia Code Light" />
+        <Image VerticalAlignment="Top" HorizontalAlignment="Left" Source="/coding_bros.png" Height="145" Width="141" />
+        <Grid HorizontalAlignment="Center" Height="185" Margin="10,198,0,0" VerticalAlignment="Center" Width="746">
+            <Label Content="Benutzername:" FontFamily="Cascadia Code Light" FontWeight="Medium" Margin="0,0,513,115" FontSize="30" Foreground="#FF012071" />
+            <TextBox x:Name="txt_benutzer"  Margin="233,0,299,115" FontSize="20" Background="Transparent" Foreground="#FF012071" TextChanged="txt_benutzer_TextChanged" />
+            <PasswordBox PasswordChar="X" x:Name="txt_password" FontSize="30" Margin="233,100,299,10" Background="White" Foreground="#FF012071" />
+            <Label Content="Passwort:" FontFamily="Cascadia Code Light" FontWeight="Medium" Margin="0,86,513,0" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF012071" />
+            <Button x:Name="btn_login" FontFamily="Cascadia Code Light" FontWeight="Medium" Margin="487,0,0,115" Content="Einloggen" FontSize="23" Click="btn_login_Click" Foreground="#FF012071" Background="White" >
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10" />
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="btn_delete" FontFamily="Cascadia Code Light " FontWeight="Medium" Margin="487,100,0,14" Content="Daten zurücksetzen" FontSize="23" Click="btn_delete_Click" Foreground="#FF012071" Background="White" >
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10" />
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="btn_forgotpw" FontFamily="Cascadia Code Light" FontWeight="Medium" Margin="279,180,345,-21" Content="Passwort vergessen?" Foreground="#FF012071" BorderThickness="0" Background="Transparent" FontSize="10" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="btn_forgotpw_Click"/>
+        </Grid>
+    </Grid>
+
+</Window>
