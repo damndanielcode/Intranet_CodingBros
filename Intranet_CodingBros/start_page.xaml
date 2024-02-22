@@ -6,7 +6,7 @@
          xmlns:gif="http://wpfanimatedgif.codeplex.com"
         xmlns:local="clr-namespace:Intranet_CodingBros"
         mc:Ignorable="d"
-        Title="Intranet.exe" SizeToContent="WidthAndHeight" Height="450" Width="800" >
+        Title="Intranet.exe" SizeToContent="WidthAndHeight" Height="450" Width="800"  >
 
     <Grid Background="White">
        
@@ -15,53 +15,55 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Frame x:Name="mainFrame"/>
-        <Grid Margin="24,158,35,201">
-            <Button x:Name="btn_apps" FontFamily="Cascadia Code Light" BorderThickness="0" Background="#FF012071" Margin="0,0,517,-14" Content="Apps💻" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="35" Click="btn_apps_Click" Foreground="White"  >
-                
+        <Grid Margin="22,157,35,201">
+            <Grid Margin="0,-105,0,-145">
+                <Button x:Name="btn_apps" FontFamily="Cascadia Code Light" BorderThickness="0" Background="#FF012071" Margin="0,105,517,131" Content="Apps💻" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="35"  Foreground="White" Click="btn_apps_Click"  >
+
                     <Button.Resources>
-                        <Style TargetType="Border">
+                        <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="10"/>
                         </Style>
                     </Button.Resources>
-               
-            </Button>
-            <Button x:Name="btn_chat" FontFamily="Cascadia Code Light" BorderThickness="0" Background="#FF012071" Margin="252,2,265,-14" Content="Chat💬" FontSize="35" Click="btn_apps_Click" Foreground="White" >
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="10"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
 
-            <Button x:Name="btn_databank"  FontFamily="Cascadia Code Light" BorderThickness="0" Margin="517,2,0,-14" Content="Databank🗄️" FontSize="35" Click="btn_apps_Click" Foreground="White" Background="#FF012071" >
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="10" />
-                    </Style>
-                </Button.Resources>
-            </Button>
+                </Button>
+                <Button x:Name="btn_chat" FontFamily="Cascadia Code Light" BorderThickness="0" Background="#FF012071" Margin="252,107,265,131" Content="Chat💬" FontSize="35"  Foreground="White" >
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
 
-            <Button x:Name="btn_tickets" FontFamily="Cascadia Code Light" BorderThickness="0" Background="#FF012071" Margin="0,140,517,-145" Content="Tickets🎟️" FontSize="30" Click="btn_apps_Click" Foreground="White" >
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="10" />
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button x:Name="btn_calendar" FontFamily="Cascadia Code Light" BorderThickness="0" Background="#FF012071" Margin="252,140,265,-145" Content="Kalender📅" FontSize="35" Click="btn_apps_Click" Foreground="White" >
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="10" />
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button x:Name="btn_time" FontFamily="Cascadia Code Light" BorderThickness="0" Background="#FF012071" Margin="517,140,0,-145" Content="Zeiterfassung⏱️" FontSize="25" Click="btn_apps_Click" Foreground="White" >
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="10" />
-                    </Style>
-                </Button.Resources>
-            </Button>
+                <Button x:Name="btn_databank"  FontFamily="Cascadia Code Light" BorderThickness="0" Margin="517,107,0,131" Content="Databank🗄️" FontSize="35" Click="btn_apps_Click" Foreground="White" Background="#FF012071" >
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button x:Name="btn_tickets" FontFamily="Cascadia Code Light" BorderThickness="0" Background="#FF012071" Margin="0,245,517,0" Content="Tickets🎟️" FontSize="30"  Foreground="White" Click="btn_tickets_Click" >
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button x:Name="btn_calendar" FontFamily="Cascadia Code Light" BorderThickness="0" Background="#FF012071" Margin="252,245,265,0" Content="Kalender📅" FontSize="35"  Foreground="White" >
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button x:Name="btn_time" FontFamily="Cascadia Code Light" BorderThickness="0" Background="#FF012071" Margin="517,245,0,0" Content="Zeiterfassung⏱️" FontSize="25"  Foreground="White" >
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </Grid>
         </Grid>
         <Label Margin="181,23,158,319" FontFamily="Cascadia Code Light"  Content="CodingBros." VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="60" Foreground="#FF012071"  />
         

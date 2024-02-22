@@ -5,13 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Intranet_CodingBros"
         mc:Ignorable="d"
-        Title="MainWindow" SizeToContent="WidthAndHeight" MinWidth="800" MinHeight="450"   >
+        Title="MainWindow" SizeToContent="WidthAndHeight" MinWidth="800" MinHeight="450" WindowState="Maximized"  >
 
-    <Grid Background="White">
-       
+    <Grid x:Name="LoginGrid" Background="White" RenderTransformOrigin="0.5,0.5" >
+        <Grid.RenderTransform>
+            <TranslateTransform />
+        </Grid.RenderTransform>
         <Label x:Name="lbl_intranet" FontWeight="Medium" Margin="30,10,30,350" Content="CODING BROS." HorizontalContentAlignment="Center" VerticalContentAlignment="Top" FontSize="50"  Foreground="#FF012071" FontFamily="Cascadia Code Light" />
-        <Image VerticalAlignment="Top" HorizontalAlignment="Left" Source="/coding_bros.png" Height="145" Width="141" />
-        <Grid HorizontalAlignment="Center" Height="185" Margin="10,198,0,0" VerticalAlignment="Center" Width="746">
+        <Image VerticalAlignment="Top" HorizontalAlignment="Left" Height="120" Width="141" Source="/coding_bros.png" />
+        <Grid  HorizontalAlignment="Center" Height="185" Margin="10,198,0,0" VerticalAlignment="Center" Width="746" >
+
             <Label Content="Benutzername:" FontFamily="Cascadia Code Light" FontWeight="Medium" Margin="0,0,513,115" FontSize="30" Foreground="#FF012071" />
             <TextBox x:Name="txt_benutzer"  Margin="233,0,299,115" FontSize="20" Background="Transparent" Foreground="#FF012071" TextChanged="txt_benutzer_TextChanged" />
             <PasswordBox PasswordChar="X" x:Name="txt_password" FontSize="30" Margin="233,100,299,10" Background="White" Foreground="#FF012071" />

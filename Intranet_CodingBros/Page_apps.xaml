@@ -9,6 +9,7 @@
       Title="Page_apps">
 
     <Grid Background="#FF012071">
+       
         <Grid Margin="0,121,0,0">
             <Label x:Name="lbl_background" Background="White">
                 <Label.Resources>
@@ -18,7 +19,7 @@
                 </Label.Resources>
             </Label>
 
-            <Button x:Name="btn_To_Do" Margin="19,68,590,189" FontFamily="Cascadia Code Light" Background="#FF012071" Foreground="White" Content="ToDo Liste📋" FontSize="26">
+            <Button x:Name="btn_To_Do" Margin="19,68,590,189" FontFamily="Cascadia Code Light" Background="#FF012071" Foreground="White" Content="ToDo Liste📋" FontSize="26" Click="btn_To_Do_Click">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}" >
                         <Setter Property="CornerRadius" Value="30" />
@@ -60,17 +61,10 @@
                     </Style>
                 </Button.Resources>
             </Button>
-
-            <Border BorderBrush="Black" BorderThickness="1" CornerRadius="10" Margin="587,174,182,129" Background="White">
-
-                <Image x:Name="Img_lock_Kopieren" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/lock.jpg" Height="19" Width="18"   />
-
-            </Border>
-            <Border BorderBrush="Black" BorderThickness="1" CornerRadius="10" Margin="587,58,182,245" Background="White">
-
-                <Image x:Name="Img_lock_Kopieren1" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/lock.jpg" Height="19" Width="18"   />
-
-            </Border>
+            
+            <Image Margin="587,174,182,129" x:Name="Img_lock_Kopieren" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/lock.jpg" Height="19" Width="18"   />
+            <Image Margin="587,58,182,245" x:Name="Img_lock_Kopieren1" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/lock.jpg" Height="19" Width="18"   />
+            
         </Grid>
         <Label x:Name="lbl_apps" Margin="267,10,294,366" Content="Apps" FontFamily="Cascadia Code Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="50" Background="#FF012071" Foreground="White">
             <Label.Resources>

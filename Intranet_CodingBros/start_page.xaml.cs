@@ -23,22 +23,22 @@ namespace Intranet_CodingBros
 		public start_page()
 		{
 			InitializeComponent();
+			
 		}
 
 		private void btn_apps_Click(object sender, RoutedEventArgs e)
 		{
-			try 
-			{
-				mainFrame.Navigate(new Uri("Page_apps.xaml", UriKind.Relative));
-			}
-			
-			catch (Exception ex)
-			{
-				MessageBox.Show($"Error navigating to Page_apps.xaml: {ex.Message}");
-			}
+
+			Page_apps appsPage = new Page_apps();
+
+			this.Content = appsPage;
+
 		}
 
+
 		
+
+
 
 		private void Image_Loaded(object sender, RoutedEventArgs e)
 		{
@@ -49,5 +49,14 @@ namespace Intranet_CodingBros
 			}
 		}
 
-	}
+		private void btn_arrow_right_Click (object sender, RoutedEventArgs e)
+		{
+			
+		}
+
+		private void btn_tickets_Click(object sender, RoutedEventArgs e)
+		{
+
+        }
+    }
 }
