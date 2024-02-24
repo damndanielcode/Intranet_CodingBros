@@ -61,6 +61,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="calculator.xaml.cs">
+      <DependentUpon>calculator.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Page_apps.xaml.cs">
       <DependentUpon>Page_apps.xaml</DependentUpon>
     </Compile>
@@ -70,6 +73,10 @@
     <Compile Include="TodoPage.xaml.cs">
       <DependentUpon>TodoPage.xaml</DependentUpon>
     </Compile>
+    <Page Include="calculator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

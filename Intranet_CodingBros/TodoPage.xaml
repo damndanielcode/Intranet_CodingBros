@@ -40,9 +40,17 @@
                     <GridViewColumn Header="Beschreibung" DisplayMemberBinding="{Binding Beschreibung}" Width="150"/>
                     <GridViewColumn Header="Mitarbeiter" DisplayMemberBinding="{Binding Mitarbeiter}" Width="150" />
                     <GridViewColumn Header="Deadline" DisplayMemberBinding="{Binding Deadline}" Width="150" />
+                    <GridViewColumn Header="Erledigt?"  Width="150">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox Click="CheckBox_Click" IsChecked="{Binding IsDone, UpdateSourceTrigger=PropertyChanged}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>
+
 
         <Button x:Name="btn_add" Content="Hinzufügen" FontSize="24" FontFamily="Cascadia Code Light" Foreground="White" Background="#FF012071"  Margin="1478,267,0,674" Click="btn_add_Click">
             <Button.Resources>
