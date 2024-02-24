@@ -67,6 +67,9 @@
     <Compile Include="start_page.xaml.cs">
       <DependentUpon>start_page.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TodoPage.xaml.cs">
+      <DependentUpon>TodoPage.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -84,6 +87,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="start_page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TodoPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -119,13 +126,11 @@
     <Resource Include="Image1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="coding_bros.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="kostenloses-foto-karfreitag-hintergrund-mit-jesus-christus-und-kreuz_1340-28462.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bmw-m4-rainy-night-moewalls-com.mp4" />
+    <Resource Include="coding_bros.png" />
     <Resource Include="lock.jpg" />
     <Resource Include="welcome-cat.gif" />
   </ItemGroup>

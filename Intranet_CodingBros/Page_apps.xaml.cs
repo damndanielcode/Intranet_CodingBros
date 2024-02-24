@@ -35,5 +35,24 @@ namespace Intranet_CodingBros
 		{
 			MessageBox.Show("Fehler. Sie verfügen über nicht genügende Berechtigungen.");
 		}
+
+		private void btn_To_Do_Click(object sender, RoutedEventArgs e)
+		{
+			TodoPage todoPage = new TodoPage();
+			Window todoWindow = new Window
+			{
+				Title = "To Do Page",
+				Content = todoPage,
+				Width = 800,
+				Height = 450
+			};
+
+			todoWindow.Show();
+		}
+
+		private void appsFrame_Navigated(object sender, NavigationEventArgs e)
+		{
+
+		}
 	}
 }

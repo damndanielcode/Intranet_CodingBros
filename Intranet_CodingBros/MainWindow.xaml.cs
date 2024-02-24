@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -27,14 +28,16 @@ namespace Intranet_CodingBros
 			
 			InitializeComponent();
 		}
+
+
 		
 
-		//Skip login
-		
-			
-			
+
+
+
 		private void btn_login_Click(object sender, RoutedEventArgs e)
 		{
+			
 			string loginname = txt_benutzer.Text;
 			string password = txt_password.Password;
 
@@ -74,9 +77,11 @@ namespace Intranet_CodingBros
 			}
 
 			else if(login_granted == false && input== false) 
-			{ 
+			{
+				
 				login_failure -= 1;
 				MessageBox.Show("Falscher Benutzername oder Passwort. " + "Sie haben noch " + login_failure + " Versuche übrig.");
+				
 			}
 
 			if(login_failure == 0)
@@ -91,6 +96,7 @@ namespace Intranet_CodingBros
 				win2.Show();
 				Close();
 			}
+
 		}
 
 		private void btn_delete_Click(object sender, RoutedEventArgs e)

@@ -5,12 +5,13 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Intranet_CodingBros"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="Page_apps">
+      
+      Title="Page_apps" Width="1920" Height="1080">
 
     <Grid Background="#FF012071">
+
         <Grid Margin="0,121,0,0">
-            <Label x:Name="lbl_background" Background="White">
+            <Label x:Name="lbl_background" Background="White" Margin="0,56,0,10">
                 <Label.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius"  Value="100,100,0,0"/>
@@ -18,42 +19,42 @@
                 </Label.Resources>
             </Label>
 
-            <Button x:Name="btn_To_Do" Margin="19,68,590,189" FontFamily="Cascadia Code Light" Background="#FF012071" Foreground="White" Content="ToDo Liste📋" FontSize="26">
+            <Button x:Name="btn_To_Do" Margin="88,578,1481,119" FontFamily="Cascadia Code Light" Background="#FF012071" Foreground="White" Content="ToDo Liste📋" FontSize="50" Click="btn_To_Do_Click">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}" >
                         <Setter Property="CornerRadius" Value="30" />
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="btn_calculator" Margin="19,178,590,79" FontFamily="Cascadia Code Light" Background="#FF012071" Foreground="White" Content="Rechner🖩" FontSize="30">
+            <Button x:Name="btn_calculator" Margin="88,273,1481,424" FontFamily="Cascadia Code Light" Background="#FF012071" Foreground="White" Content="Rechner🖩" FontSize="50">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}" >
                         <Setter Property="CornerRadius" Value="30" />
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="btn_weather" Margin="317,178,294,79" FontFamily="Cascadia Code Light" Background="#FF012071" Foreground="White" Content="Wetter🌤️" FontSize="30">
+            <Button x:Name="btn_weather" Margin="757,578,815,119" FontFamily="Cascadia Code Light" Background="#FF012071" Foreground="White" Content="Wetter🌤️" FontSize="50">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}" >
                         <Setter Property="CornerRadius" Value="30" />
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="btn_photo_gallery" Margin="317,68,294,189"  FontFamily="Cascadia Code Light" Background="#FF012071" Foreground="White" Content="Fotos📷" FontSize="30">
+            <Button x:Name="btn_photo_gallery" Margin="757,273,815,424"  FontFamily="Cascadia Code Light" Background="#FF012071" Foreground="White" Content="Fotos📷" FontSize="50">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}" >
                         <Setter Property="CornerRadius" Value="30" />
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="btn_earnings" Margin="587,68,25,189" FontFamily="Cascadia Code Light" Background="#FF012071" Foreground="White" Content="Einnahmen📈" FontSize="27" Click="btn_earnings_Click">
+            <Button x:Name="btn_earnings" Margin="1441,578,131,119" FontFamily="Cascadia Code Light" Background="#FF012071" Foreground="White" Content="Einnahmen📈" FontSize="50" Click="btn_earnings_Click">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}" >
                         <Setter Property="CornerRadius" Value="30" />
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="btn_salarys" Margin="587,178,25,79" FontFamily="Cascadia Code Light" Background="#FF012071" Foreground="White" Content="Gehälter💼" FontSize="30" Click="btn_salarys_Click">
+            <Button x:Name="btn_salarys" Margin="1441,273,131,424" FontFamily="Cascadia Code Light" Background="#FF012071" Foreground="White" Content="Gehälter💼" FontSize="50" Click="btn_salarys_Click">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}" >
                         <Setter Property="CornerRadius" Value="30" />
@@ -61,18 +62,11 @@
                 </Button.Resources>
             </Button>
 
-            <Border BorderBrush="Black" BorderThickness="1" CornerRadius="10" Margin="587,174,182,129" Background="White">
+            <Image x:Name="Img_lock_Kopieren" HorizontalAlignment="Left" VerticalAlignment="Top" Source="/lock.jpg" Height="102" Width="85" Margin="1421,578,0,0"   />
+            <Image x:Name="Img_lock_Kopieren1" HorizontalAlignment="Left" VerticalAlignment="Top" Source="/lock.jpg" Height="95" Width="94" Margin="1412,273,0,0"   />
 
-                <Image x:Name="Img_lock_Kopieren" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/lock.jpg" Height="19" Width="18"   />
-
-            </Border>
-            <Border BorderBrush="Black" BorderThickness="1" CornerRadius="10" Margin="587,58,182,245" Background="White">
-
-                <Image x:Name="Img_lock_Kopieren1" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/lock.jpg" Height="19" Width="18"   />
-
-            </Border>
         </Grid>
-        <Label x:Name="lbl_apps" Margin="267,10,294,366" Content="Apps" FontFamily="Cascadia Code Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="50" Background="#FF012071" Foreground="White">
+        <Label x:Name="lbl_apps" Margin="573,0,603,907" Content="Apps" FontFamily="Cascadia Code Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="120" Background="#FF012071" Foreground="White">
             <Label.Resources>
                 <Style TargetType="{x:Type Border}" >
                     <Setter Property="CornerRadius" Value="10" />
