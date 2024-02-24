@@ -65,6 +65,13 @@
             <Image x:Name="Img_lock_Kopieren" HorizontalAlignment="Left" VerticalAlignment="Top" Source="/lock.jpg" Height="102" Width="85" Margin="1421,578,0,0"   />
             <Image x:Name="Img_lock_Kopieren1" HorizontalAlignment="Left" VerticalAlignment="Top" Source="/lock.jpg" Height="95" Width="94" Margin="1412,273,0,0"   />
 
+
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1" CornerRadius="10" Margin="587,58,182,245" Background="White">
+
+                <Image x:Name="Img_lock_Kopieren1" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/lock.jpg" Height="19" Width="18"   />
+
+            </Border>
         </Grid>
         <Label x:Name="lbl_apps" Margin="573,0,603,907" Content="Apps" FontFamily="Cascadia Code Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="120" Background="#FF012071" Foreground="White">
             <Label.Resources>
