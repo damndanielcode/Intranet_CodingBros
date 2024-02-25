@@ -6,11 +6,11 @@
       xmlns:local="clr-namespace:Intranet_CodingBros"
       mc:Ignorable="d" 
     
-      Title="calculator" Width="1920" Height="1080">
+      Title="calculator" Width="1920" Height="1080" >
 
     <Grid Background="White">
         <Label x:Name="lbl_title" Content="Rechner" Margin="795,61,0,0" FontSize="60"  VerticalAlignment="Top" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <Label Margin="1198,607,84,153" Background="Beige"/>
+        <Label Margin="1215,610,10,138" Background="Beige"/>
         <Button x:Name="btn_2" Margin="1336,607,492,395" Content="2" FontFamily="Cascadia Code Light" FontSize="60">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -39,7 +39,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="btn_1" Margin="1220,607,608,395" Content="1" FontFamily="Cascadia Code Light" FontSize="60">
+        <Button x:Name="btn_1" Margin="1220,607,608,395" Content="1" FontFamily="Cascadia Code Light" FontSize="60" Click="btn_1_Click">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20" />
@@ -53,7 +53,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <TextBox x:Name="txtb_calculator" Margin="398,223,504,679" Background="Gray"/>
+        <TextBox x:Name="txtb_calculator" Margin="398,223,504,679" Background="Gray" TextChanged="txtb_calculator_TextChanged"/>
         <Button x:Name="btn_7" Margin="1224,845,604,157" Content="7" FontFamily="Cascadia Code Light" FontSize="60">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
@@ -75,35 +75,35 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="btn_plus" Margin="1612,607,216,395" Content="+" FontFamily="Cascadia Code Light" FontSize="60">
+        <Button x:Name="btn_plus" Margin="1702,610,126,392" Content="+" FontFamily="Cascadia Code Light" FontSize="60">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20" />
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="btn_minus" Margin="1728,607,100,395" Content="-" FontFamily="Cascadia Code Light" FontSize="60">
+        <Button x:Name="btn_minus" Margin="1818,610,10,392" Content="-" FontFamily="Cascadia Code Light" FontSize="60">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20" />
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="btn_x" Margin="1612,731,216,271" Content="x" FontFamily="Cascadia Code Light" FontSize="60">
+        <Button x:Name="btn_x" Margin="1702,731,126,271" Content="x" FontFamily="Cascadia Code Light" FontSize="60">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20" />
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="btn_div" Margin="1728,731,100,271" Content="/" FontFamily="Cascadia Code Light" FontSize="60">
+        <Button x:Name="btn_div" Margin="1818,731,10,271" Content="/" FontFamily="Cascadia Code Light" FontSize="60">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20" />
                 </Style>
             </Button.Resources>
         </Button>
-        <Button x:Name="btn_del" Margin="1612,849,117,153" Content="Löschen" FontFamily="Cascadia Code Light" FontSize="40">
+        <Button x:Name="btn_del" Margin="1678,845,10,157" Content="Löschen" FontFamily="Cascadia Code Light" FontSize="40">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20" />
@@ -132,6 +132,20 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <Button x:Name="btn_0" Margin="1583,610,245,392" Content="0" FontFamily="Cascadia Code Light" FontSize="60">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20" />
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btn_comma" Margin="1583,731,245,271" Content="," FontFamily="Cascadia Code Light" FontSize="60">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20" />
+                </Style>
+            </Button.Resources>
+        </Button>
 
     </Grid>
 

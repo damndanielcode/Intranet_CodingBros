@@ -43,8 +43,9 @@ namespace Intranet_CodingBros
 			{
 				Title = "To Do Page",
 				Content = todoPage,
-				Width = 800,
-				Height = 450
+				Width = 1920,
+				Height = 1080,
+				WindowState = WindowState.Maximized
 			};
 
 			todoWindow.Show();
@@ -54,5 +55,22 @@ namespace Intranet_CodingBros
 		{
 
 		}
-	}
+
+		private void btn_calculator_Click(object sender, RoutedEventArgs e)
+		{
+			calculator calculatorPage = new calculator();
+
+			Window calculatorWindow = new Window
+			{
+				Content = calculatorPage,
+				Title = "Calculator",
+
+				WindowState = WindowState.Maximized
+			};
+
+			calculatorWindow.Show();
+
+
+		}
+    }
 }

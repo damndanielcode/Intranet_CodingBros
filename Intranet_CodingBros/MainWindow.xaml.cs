@@ -43,11 +43,15 @@ namespace Intranet_CodingBros
 
 			string benutzer1 = "Daniel";
 			string benutzer2 = "Jakob" ;
-			string benutzer3 ="Benutzer" ;
+			string benutzer3 ="" ;
+
+			
 
 			string password1 = "1111";
 			string password2 = "2222";
-			string password3 = "Passwort";
+			string password3 = "";
+
+			
 
 			bool login_granted = false;
 			bool input = false;

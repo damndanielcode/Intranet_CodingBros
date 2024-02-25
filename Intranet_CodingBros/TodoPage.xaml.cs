@@ -58,7 +58,7 @@ namespace Intranet_CodingBros
 						// Hier könnte der Code stehen, um die Aufgabe nach 10 Sekunden zu löschen
 						TodoItem itemToDelete = todoItem;
 						DispatcherTimer deleteTimer = new DispatcherTimer();
-						deleteTimer.Interval = TimeSpan.FromSeconds(10);
+						deleteTimer.Interval = TimeSpan.FromSeconds(5);
 						deleteTimer.Tick += (senderTimer, eTimer) =>
 						{
 							TodoItems.Remove(itemToDelete);

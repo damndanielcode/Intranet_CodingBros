@@ -21,7 +21,7 @@
 
             <Label Content="Benutzername:" FontFamily="Cascadia Code Light" FontWeight="Medium" Margin="0,0,513,115" FontSize="30" Foreground="#FF012071" />
             <TextBox x:Name="txt_benutzer"  Margin="233,0,299,115" FontSize="20" Background="Transparent" Foreground="#FF012071" TextChanged="txt_benutzer_TextChanged" />
-            <PasswordBox PasswordChar="X" x:Name="txt_password" FontSize="30" Margin="233,100,299,10" Background="White" Foreground="#FF012071" />
+            <PasswordBox PasswordChar="*" x:Name="txt_password" FontSize="30" Margin="233,100,299,10" Background="White" Foreground="#FF012071" />
             <Label Content="Passwort:" FontFamily="Cascadia Code Light" FontWeight="Medium" Margin="0,86,513,0" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF012071" />
             <Button x:Name="btn_login" FontFamily="Cascadia Code Light" FontWeight="Medium" Margin="487,0,0,115" Content="Einloggen" FontSize="23" Click="btn_login_Click" Foreground="#FF012071" Background="White" >
                 <Button.Resources>
