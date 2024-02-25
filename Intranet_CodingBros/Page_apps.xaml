@@ -8,8 +8,8 @@
       
       Title="Page_apps" Width="1920" Height="1080">
 
-    <Grid Background="#FF012071">
-        <Frame x:Name="mainFrame" NavigationUIVisibility="Hidden"/>
+    <Grid Background="Black">
+
         <Grid Margin="0,121,0,0">
             <Label x:Name="lbl_background" Background="White" Margin="0,56,0,10">
                 <Label.Resources>
