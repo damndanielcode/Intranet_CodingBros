@@ -26,7 +26,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="btn_calculator" Margin="88,273,1481,424" FontFamily="Cascadia Code Light" Background="#FF012071" Foreground="White" Content="Rechner🖩" FontSize="50" Click="btn_calculator_Click">
+            <Button x:Name="btn_calculator" Margin="88,273,1481,424" FontFamily="Cascadia Code Light" Background="#FF012071" Foreground="White" Content="Popolive🖩" FontSize="50" Click="btn_calculator_Click">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}" >
                         <Setter Property="CornerRadius" Value="30" />
