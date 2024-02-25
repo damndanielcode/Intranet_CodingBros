@@ -9,7 +9,7 @@
       Title="Page_apps" Width="1920" Height="1080">
 
     <Grid Background="#FF012071">
-
+        <Frame x:Name="mainFrame" NavigationUIVisibility="Hidden"/>
         <Grid Margin="0,121,0,0">
             <Label x:Name="lbl_background" Background="White" Margin="0,56,0,10">
                 <Label.Resources>
@@ -72,6 +72,13 @@
                     </Style>
                 </Label.Resources>
             </Label>
+            <Button x:Name="btn_homepage" Margin="757,104,815,769"  FontFamily="Cascadia Code Light" Background="#FF012071" Foreground="White" Content="Startseite" FontSize="50" Click="btn_homepage_Click">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}" >
+                        <Setter Property="CornerRadius" Value="15" />
+                    </Style>
+                </Button.Resources>
+            </Button>
         </Grid>
     </Grid>
 </Page>

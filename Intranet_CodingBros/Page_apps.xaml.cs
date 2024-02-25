@@ -72,5 +72,16 @@ namespace Intranet_CodingBros
 
 
 		}
-    }
+
+		private void btn_homepage_Click(object sender, RoutedEventArgs e)
+		{
+			start_page startPage = new start_page();
+
+			// Zeigen Sie die Startseite an
+			startPage.Show();
+
+			// Schließen Sie die aktuelle Seite
+			Window.GetWindow(this).Close();
+		}
+	}
 }

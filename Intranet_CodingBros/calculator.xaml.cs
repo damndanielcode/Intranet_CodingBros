@@ -13,78 +13,119 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Intranet_CodingBros
+
+
+
+
+namespace Intranet_CodingBros { 
+
+public partial class calculator : Page
+
+
 {
-	/// <summary>
-	/// Interaktionslogik für calculator.xaml
-	/// </summary>
-	public partial class calculator : Page
-	{
+		double calculatortext = 0.00;
 
-		                                                
 
-		public calculator()
+		public calculator() 
 		{
 			InitializeComponent();
 		}
 
-		private void btn_0_Click(object sender, RoutedEventArgs e)
+
+		public void btn_calculate_Click(object sender, RoutedEventArgs e)
 		{
-			txtb_calculator.Text += 0;
+		
 		}
 
-		private void btn_1_Click(object sender, RoutedEventArgs e)
-		{
-			txtb_calculator.Text += 1;
-		}
-
-		private void btn_2_Click(object sender, RoutedEventArgs e)
-		{
-			txtb_calculator.Text += 2;
-		}
-
-		private void btn_3_Click(object sender, RoutedEventArgs e)
-		{
-			txtb_calculator.Text += 3;
-		}
-
-		private void btn_4_Click(object sender, RoutedEventArgs e)
-		{
-			txtb_calculator.Text += 4;
-		}
-
-		private void btn_5_Click(object sender, RoutedEventArgs e)
-		{
-			txtb_calculator.Text += 5;
-		}
-
-		private void btn_6_Click(object sender, RoutedEventArgs e)
-		{
-			txtb_calculator.Text += 6;
-		}
-
-		private void btn_7_Click(object sender, RoutedEventArgs e)
+		private void txt_calculate_TextChanged(object sender, TextChangedEventArgs e)
 		{
 
-			txtb_calculator.Text += 7;
 		}
-		private void btn_8_Click(object sender, RoutedEventArgs e)
+
+		public void btn_1_CLick(object sender, RoutedEventArgs e)
 		{
-			txtb_calculator.Text += 8;
+
 		}
-		private void btn_9_Click(object sender, RoutedEventArgs e)
+
+		public void btn_2_CLick(object sender, RoutedEventArgs e)
+	{
+	
+	}
+	public void btn_3_CLick(object sender, RoutedEventArgs e)
+	{
+		
+	}
+	public void btn_4_CLick(object sender, RoutedEventArgs e)
+	{
+		
+	}
+	
+
+	private void btn_8_Click(object sender, RoutedEventArgs e)
+	{
+
+	}
+
+	private void btn_5_Click(object sender, RoutedEventArgs e)
+	{
+
+	}
+
+	private void btn_6_Click(object sender, RoutedEventArgs e)
+	{
+
+	}
+
+	private void btn_7_Click(object sender, RoutedEventArgs e)
+	{
+
+	}
+
+	private void btn_9_Click(object sender, RoutedEventArgs e)
+	{
+
+	}
+
+	private void btn_0_Click(object sender, RoutedEventArgs e)
+	{
+
+	}
+	public class CalculationHistory
+	{
+		public int Reihenfolge { get; set; }
+		public double Ergebnis { get; set; }
+		public DateTime Uhrzeit { get; set; }
+	}
+
+		private void btn_comma_Click(object sender, RoutedEventArgs e)
 		{
-			txtb_calculator.Text += 9;
+
+		}
+
+		private void btn_x_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		private void btn_div_Click(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		private void btn_minus_Click(object sender, RoutedEventArgs e)
+		{
+
 		}
 
 		private void btn_plus_Click(object sender, RoutedEventArgs e)
 		{
-			txtb_calculator.Text += "+";
+
 		}
 
-		private void txtb_calculator_TextChanged(object sender, TextChangedEventArgs e)
+		private void btn_del_Click(object sender, RoutedEventArgs e)
 		{
 
 		}
 	}
+
 }
